@@ -6,12 +6,14 @@
   --card-bg: #f1f1f1;
 }
 
+/* Dark mode overrides */
 body.dark {
   --bg: #121212;
   --text: #ffffff;
   --card-bg: #1e1e1e;
 }
 
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +27,7 @@ body {
   transition: background 0.4s, color 0.4s;
 }
 
+/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -72,7 +75,7 @@ header {
   background: #3730a3;
 }
 
-/* Gallery */
+/* Gallery styles */
 .gallery {
   display: flex;
   gap: 1rem;
@@ -104,7 +107,7 @@ header {
   transform: scale(1.05);
 }
 
-/* Fade-in animation */
+/* Fade-in animation for cards */
 .fade-in {
   animation: fadeIn 1s forwards;
 }
@@ -114,7 +117,7 @@ header {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Footer */
+/* Footer styles */
 footer {
   padding: 1.5rem;
   text-align: center;
@@ -133,7 +136,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Responsive styles */
 @media (max-width: 768px) {
   .gallery {
     flex-direction: column;
